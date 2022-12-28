@@ -9,5 +9,9 @@ addTodo.addEventListener("click", function() {
     li.innerHTML = toDo;
     ul.appendChild(li);
     input.value = "";
-    
+
+    li.addEventListener("click", function() {
+        li.innerHTML = "done";
+    })
 })
+
